@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.cluster import DBSCAN
 from matplotlib import pyplot as plt
 
-img = cv2.imread('F:/Charmi/19-6 img seg algo codes/city2.png')
+img = cv2.imread('F:/Charmi/city2.png')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # plt.imshow(img)
 # plt.show()
@@ -20,7 +20,7 @@ ax[1].imshow(np.uint8(db.labels_.reshape(img.shape[:2])))
 for a in ax:
     a.axis('off')
 
-fp="F:/Charmi/19-6 img seg algo codes/DBSCAN/"
+fp="F:/Charmi/DBSCAN/"
 fn="op.jpg"
 plt.savefig(fp+fn) 
 plt.show()
