@@ -4,7 +4,7 @@ import numpy as np
 from sklearn.cluster import DBSCAN
 
 img = cv2.imread('1.tif')
-fp="F:/Charmi/19-6 img seg algo codes/K-MEAN/"
+fp="F:/Charmi/K-MEAN/"
 
 # ip = cv2.cvtColor(ip, cv2.COLOR_BGR2LAB)
 # plt.imshow(img)
@@ -33,7 +33,7 @@ res2=cv2.resize(res2,(4148,, 3110))
 print(res2.shape)
 # res2 = cv2.cvtColor(res2, cv2.COLOR_RGB2RGB)
 
-cv2.imwrite("F:/Charmi/19-6 img seg algo codes/K-MEAN/op.tif",res2)
+cv2.imwrite("F:/Charmi/K-MEAN/op.tif",res2)
 
 plt.imshow(res2)
 plt.show()
